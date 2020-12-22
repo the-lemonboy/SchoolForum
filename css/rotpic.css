@@ -1,0 +1,77 @@
+#movepic{
+    width: 570px;
+    height: 230px;
+    padding: 0;
+    margin:0;
+    border:black solid 1px;
+    margin:0 auto;
+    position: relative;    
+} 
+#imgList ul{
+    
+    padding:0;
+    margin:0;
+}
+#imgList Li {  
+      /* float: left; */
+      margin-left:10px;
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:block;
+      position: absolute;
+	  left: 0px;   
+    }
+    #imgList img{
+        width: 570px;
+        height: 230px;
+        
+    }
+     #nextBtn{
+        
+        transform: rotate(180deg);
+        -ms-transform:rotate(180deg);
+        -webkit-transform:rotate(180deg);
+    }
+    #directionBtn{
+        z-index: 1110;
+        position: absolute;
+    }
+    #prevBtn{
+        position: absolute;
+        left:-30px;
+        top:20px;
+    }
+    #nextBtn{
+        position: absolute;
+        left:400px;
+        top:20px;
+    }
+ .picArr{
+     z-index: 1000;
+ }
+    .picArr.Active{
+        z-index:1100;
+    }
+    #navMove{
+        width: 300px;
+        height:20px;
+        position: absolute;
+        bottom:20px;
+        left:180px;
+        z-index: 2000;
+    }
+#navMove a{
+    float: left;
+    z-index: 2000;
+    width:10px ;
+    height:10px;
+    display: block;
+    margin: 10px;
+    opacity: 0.5;
+    background-color: rgb(25, 122, 122);
+
+}
+#navMove a:hover{
+    background-color: rgb(37, 102, 223);
+}

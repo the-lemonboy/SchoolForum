@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link href="../css/navbar.css" rel="stylesheet">
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin:0;
+    }
+    #movie{
+	height:400px;
+    background-image:linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius:10px;
+    padding: 3px;
+    margin-top:20px;
+    }
+	#show{
+		margin:30px 20px 0 0 
+		
+		
+	}
+    #show ul{
+        margin:0;
+            padding:0;
+            margin-left:50px;
+            /* margin-top: 50px; */
+    }
+    #show ul li{
+        float: left;
+        list-style: none;
+        padding: 20px;
+    }
+    #show img{
+        height: 250px;
+        display:inline-block;
+    }
+    #show h2{
+        
+        margin-left: 60px;
+        
+    }
+    ul a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin:3px;
+    }
+    ul a:hover{
+        color:black;
+    }
+    /* 每周排行榜 */
+   #list{
+     float:right;
+     position: relative;
+     top:-10px;
+     left:-10px;
+   }
+   #list ol{
+    width:300px;
+       height:400px;
+       /* border:1px solid gray; */
+       position: relative;
+       margin-right:50px;
+
+   }
+   #list li:nth-child(odd){
+	   background-color:#a1afc9;
+   }
+   #list li:nth-child(even){
+       background-color: aqua;
+   }
+    #list li  {
+        margin:0;
+        padding:0;
+        height:30px;
+        text-align:center;
+        line-height: 30px;
+        list-style: none;
+    }
+	#list h4{
+        text-align: center;
+    }
+		
+  #list a{
+       list-style:none;
+       margin-left:10px;
+       text-decoration:none;
+
+    }
+    #list li:hover{
+         background-color:cadetblue;
+    }
+    #list span{
+        float: left;
+        margin-left: 5px;
+    }
+    /* 内容区 */
+    #comment {
+        width:900px;
+        height:auto;
+        border-radius:10px;
+        margin:0 auto;
+        border:2px solid burlywood;
+        margin-top:50px;
+        background-image:linear-gradient(to right, #4facfe, #00f2fe);
+    }
+    .number1{
+        width:800px;
+        height:300px;
+        border:solid 1px gray;
+        border-radius:10px;
+        margin:50px auto;
+        background-color: #ffffff;
+        
+        
+    }
+    .number2{
+        width:800px;
+        height:300px;
+        border:solid 1px gray;
+        border-radius:10px;
+        margin:50px auto;
+        background-color: #ffffff;
+    }
+    .number3{
+        width:800px;
+        height:300px;
+        border:solid 1px gray;
+        border-radius:10px;
+        margin:50px auto;
+        background-color: #ffffff;
+    }
+    /* 网友内容 */
+    .userContent{
+    margin:10px 30px;
+}
+.userImage{
+    width:40px;
+    margin-bottom: 10px;
+}
+.userName{
+    position: relative;
+    top:-20px;
+    text-decoration: none;
+}
+.contentImage{
+    width: 100px;
+    display: inline-block;
+}
+.contentImage p{
+    float: right;
+}
+/* 内容表格 */
+td{
+    padding: 20px;
+}
+
+.remark li:nth-child(3) {
+   transform:rotate(180deg);
+} 
+.remark li{
+   position:relative;
+   bottom:40px;
+   margin:5px;
+   float:right;
+   list-style: none;
+}
+.remark img{
+   width: 50px;
+}
+
+    </style>
+</head>
+<body>
+   <div class="warrper">
+    <div class="navbar">
+        <ul id="nav">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="movie.html">电影</a></li>
+          <li><a href="music.html">音乐</a></li>
+          <li><a href="read.html">文学</a></li>
+       
+        </ul>
+       <div id="search">
+        <input id="search1" type="text" placeholder="">
+        <button id="btn1" type="submit"><img src="../images/rearch.png" height="36px""></button>
+       </div>
+        <ul id="signbtn">
+          <li><a href="../other/login.html">登录</a></li>
+          <li><a href="../other/logon.html">注册</a></li>
+          
+        </ul>
+      </div>
+    <div id="movie">
+     <div id="show">
+       
+        <ul>
+            <h2>高分榜</h3>
+            <li> <img src="../images/childImages/bawang.webp"><a href="#">霸王别姬</a></li>
+            <li><img src="../images/childImages/Titanic.webp"><a href="#">泰坦尼克号</a></li>
+            <li><img src="../images/childImages/jishengchong.webp"><a href="#">寄生虫</a></li>
+            <li><img src="../images/childImages/save.webp"><a href="#">肖生克的救赎</a></li>
+            <li><img src="../images/childImages/killer.webp"><a href="#">这个杀手不太冷</a></li>
+            
+            
+   
+        </ul>
+     </div>
+     <div id="list">
+         
+        <ol>
+            <h4>每周排行榜</h4>
+            <li><a href="#"><span>1.</span>棒！少年</a></li>
+            <li><a href="#"><span>2.</span>血战摩苏尔</a></li>
+            <li><a href="#"><span>3.</span>曼客</a></li>
+            <li><a href="#"><span>4.</span>电话</a></li>
+            <li><a href="#"><span>5.</span>太空狗</a></li>
+            <li><a href="#"><span>6.</span>三振集团英语托业班</a></li>
+            <li><a href="#"><span>7.</span>幻爱</a></li>
+              <li><a href="#"><span>8.</span>乡下人的悲歌</a></li>
+                <li><a href="#"><span>9.</span>亲爱的她</a></li>
+                  <li><a href="#"><span>10.</span>菊石</a></li>
+        </ol>
+     </div>
+    </div>
+    <div id="comment">
+        <div class="number1">
+            <!-- 网友内容 -->
+            <div class="userContent">
+                <img src="../images/childImages/moveuser1.jpg" class="userImage">
+                <a href="#" class="userName">酒鬼一家小迷妹</a>
+                <table>
+                    <tr>
+                        <td>
+                          <img src="../images/childImages/Titanic.webp"  class="contentImage">
+                        </td>
+                        <td>
+                          <p> Rose可以为爱而死，最后在Jack的舍命相救及恳求下，选择了为爱而活，而被留下的那个人是痛苦的。
+                              到老奶奶的Rose站在船边上，把海洋之星扔回海中时，我想那是它最好的归宿了。灾难面前
+                              ，有的人把生存的机会留给了别人，而有的人花钱占用了别人的机会。 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="remark">
+                    <li><a href="#"><img src="../images/childImages/farward.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/remark.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                  </ul>
+            </div>
+        </div>
+        <div class="number2">
+             <!-- 网友内容 -->
+             <div class="userContent">
+                <img src="../images/childImages/movieUser3.jpg" class="userImage">
+                <a href="#" class="userName">酒鬼一家小迷妹</a>
+                <table>
+                    <tr>
+                        <td>
+                          <img src="../images/childImages/Spirited Away.webp"  class="contentImage">
+                        </td>
+                        <td>宫崎骏没有迪斯尼那么花哨 甚至有些落伍 直到现在 
+                            他还坚持用手工绘画而不是电脑绘图来完成自己的卡
+                            通片 但他懂得一部卡通片 或者一部影片 应该用什
+                            么去打动别人 所以 宫崎骏笔下的形象是一个个人 而
+                            不是一个个没有知觉的卡通形象
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="remark">
+                    <li><a href="#"><img src="../images/childImages/farward.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/remark.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                  </ul>
+            </div>
+        </div>
+        <div class="number3">
+             <!-- 网友内容 -->
+             <div class="userContent">
+                <img src="../images/childImages/moveuser2.jpg" class="userImage">
+                <a href="#" class="userName">颜饭yy</a>
+                <table>
+                    <tr>
+                        <td>
+                          <img src="../images/childImages/inception.webp"  class="contentImage">
+                        </td>
+                        <td>
+                          <p> 要想从梦境里醒过来需要重大撞击，
+                              但有时你无法分辨到底是不是在梦里，所以有了陀螺这个图腾。
+                              然而你又怎么确定你现在经历的现实不会是一个梦境？梦醒的条件大概就是
+                              离开这个世界吧。梦、梦中梦、梦与现实错综复杂，即使烧脑多看几次也会
+                              看懂的电影，值得一看。 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="remark">
+                    <li><a href="#"><img src="../images/childImages/farward.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/remark.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                  </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

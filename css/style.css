@@ -1,0 +1,185 @@
+*{margin: 0;
+  padding: 0;}
+ 
+ .header{
+     width:100%;
+     height:250px;
+     margin:0px;
+     /* border:black solid 1px; */
+     position: relative;
+     top:70px; 
+ }
+/* 个人信息 */
+ .PI{
+     width:210px;
+     height: 230px;
+     border:solid gray 1px;
+     border-radius: 10px;
+     float: right;
+     background-color: #00f2fe;
+        position: relative;
+        top:-230px;
+        left:-1250px;
+ } 
+  .PI img{
+        border-radius:50%;
+        padding:1.5px;
+        width:130px;
+        margin:20px 0 0 36px;
+        border:5px solid rgb(128, 117, 117);
+        
+        
+ }
+ .PI a{
+     font-weight: bold;
+     font-size:1.2em;
+     display: block;
+     text-align: center;
+     margin:10px;
+     text-decoration: none;
+
+ }
+ /* 内容区 */
+ .content {
+    width:900px;
+    height:auto;
+    margin:0 auto;
+    border:2px solid burlywood;
+    margin-top:50px;
+    border-radius: 10px;
+    background-image:linear-gradient(to right, #4facfe, #00f2fe);
+}
+.number1{
+    width:800px;
+    height:300px;
+    border:solid 1px gray;
+    border-radius:10px;
+    margin:50px auto;
+    background-color: #ffffff;
+    
+}
+.number2{
+    width:800px;
+    height:300px;
+    border:solid 1px gray;
+    border-radius:10px;
+    margin:50px auto;
+    background-color: #ffffff;
+}
+.number3{
+    width:800px;
+    height:300px;
+    border:solid 1px gray;
+    border-radius:10px;
+    margin:50px auto;
+    background-color: #ffffff;
+}
+/* 用户内容 */ 
+.userImage{
+    width:40px;
+    margin-bottom: 10px;
+}
+.userName{
+    position: relative;
+    top:-20px;
+    text-decoration: none;
+}
+.contentImage{
+    width: 100px;
+    display: inline-block;
+}
+.contentImage p{
+    float: right;
+}
+/* 内容表格 */
+td{
+    padding: 20px;
+}
+
+.remark li:nth-child(3) {
+   transform:rotate(180deg);
+} 
+.remark li{
+   position:relative;
+   bottom:40px;
+   margin:5px;
+   float:right;
+   list-style: none;
+}
+.remark img{
+   width: 50px;
+}
+/* 内容区 */
+#comment {
+    width:900px;
+    height:auto;
+    border-radius:10px;
+    margin:0 auto;
+    border:2px solid burlywood;
+    margin-top:50px;
+    background-image:linear-gradient(to right, #4facfe, #00f2fe);
+}
+.number1{
+    width:800px;
+    height:300px;
+    border:solid 1px gray;
+    border-radius:10px;
+    margin:50px auto;
+    background-color: #ffffff;
+    
+    
+}
+.number2{
+    width:800px;
+    height:300px;
+    border:solid 1px gray;
+    border-radius:10px;
+    margin:50px auto;
+    background-color: #ffffff;
+}
+.number3{
+    width:800px;
+    height:300px;
+    border:solid 1px gray;
+    border-radius:10px;
+    margin:50px auto;
+    background-color: #ffffff;
+}
+   /* 网友内容 */
+   .userContent{
+    margin:10px 30px;
+}
+.userImage{
+    width:40px;
+    margin-bottom: 10px;
+}
+.userName{
+    position: relative;
+    top:-20px;
+    text-decoration: none;
+}
+.contentImage{
+    width: 100px;
+    display: inline-block;
+}
+.contentImage p{
+    float: right;
+}
+/* 内容表格 */
+td{
+    padding: 20px;
+}
+
+.remark li:nth-child(3) {
+   transform:rotate(180deg);
+} 
+.remark li{
+   position:relative;
+   bottom:40px;
+   margin:5px;
+   float:right;
+   list-style: none;
+}
+.remark img{
+   width: 50px;
+}

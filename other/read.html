@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link href="../css/navbar.css" rel="stylesheet">
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin:0;
+    }
+    #movie{
+	height:400px;
+    background-image:linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius:10px;
+    padding: 3px;
+    margin-top:20px;
+    }
+	#show{
+		margin:30px 20px 0 0 
+		
+		
+	}
+    #show ul{
+        margin:0;
+            padding:0;
+            margin-left:50px;
+            /* margin-top: 50px; */
+    }
+    #show ul li{
+        float: left;
+        list-style: none;
+        padding: 20px;
+    }
+    #show img{
+        height: 250px;
+        display:inline-block;
+    }
+    #show h2{
+        
+        margin-left: 60px;
+        
+    }
+    ul a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin:3px;
+    }
+    ul a:hover{
+        color:black;
+    }
+    /* 每周排行榜 */
+   #list{
+     float:right;
+     position: relative;
+     top:-10px;
+     left:-10px;
+   }
+   #list ol{
+    width:300px;
+       height:400px;
+       /* border:1px solid gray; */
+       position: relative;
+       margin-right:50px;
+
+   }
+   #list li:nth-child(odd){
+	   background-color:#a1afc9;
+   }
+   #list li:nth-child(even){
+       background-color: aqua;
+   }
+    #list li  {
+        margin:0;
+        padding:0;
+        height:30px;
+        text-align:center;
+        line-height: 30px;
+        list-style: none;
+    }
+	#list h4{
+        text-align: center;
+    }
+		
+  #list a{
+       list-style:none;
+       margin-left:10px;
+       text-decoration:none;
+
+    }
+    #list li:hover{
+         background-color:cadetblue;
+    }
+    #list span{
+        float: left;
+        margin-left: 5px;
+    }
+    #comment {
+        width:900px;
+        height:auto;
+        border-radius:10px;
+        margin:0 auto;
+        border:2px solid burlywood;
+        margin-top:50px;
+        background-image:linear-gradient(to right, #4facfe, #00f2fe);
+    }
+    .number1{
+        width:800px;
+        height:300px;
+        border:solid 1px gray;
+        border-radius:10px;
+        margin:50px auto;
+        background-color: #ffffff;
+        
+        
+    }
+    .number2{
+        width:800px;
+        height:300px;
+        border:solid 1px gray;
+        border-radius:10px;
+        margin:50px auto;
+        background-color: #ffffff;
+    }
+    .number3{
+        width:800px;
+        height:300px;
+        border:solid 1px gray;
+        border-radius:10px;
+        margin:50px auto;
+        background-color: #ffffff;
+    }
+    /* 网友内容 */
+    .userContent{
+    margin:10px 30px;
+}
+.userImage{
+    width:40px;
+    margin-bottom: 10px;
+}
+.userName{
+    position: relative;
+    top:-20px;
+    text-decoration: none;
+}
+.contentImage{
+    width: 100px;
+    display: inline-block;
+}
+.contentImage p{
+    float: right;
+}
+/* 内容表格 */
+td{
+    padding: 20px;
+}
+
+.remark li:nth-child(3) {
+   transform:rotate(180deg);
+} 
+.remark li{
+   position:relative;
+   bottom:40px;
+   margin:5px;
+   float:right;
+   list-style: none;
+}
+.remark img{
+   width: 50px;
+}
+
+    </style>
+</head>
+<body>
+   <div class="warrper">
+    <div class="navbar">
+        <ul id="nav">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../other/movie.html">电影</a></li>
+          <li><a href="../other/music.html">音乐</a></li>
+          <li><a href="../other/read.html">文学</a></li>
+   
+        </ul>
+       <div id="search">
+        <input id="search1" type="text" placeholder="">
+        <button id="btn1" type="submit"><img src="../images/rearch.png" height="36px""></button>
+       </div>
+        <ul id="signbtn">
+          <li><a href="../other/login.html">登录</a></li>
+          <li><a href="../other/logon.html">注册</a></li>
+          
+        </ul>
+      </div>
+    <div id="movie">
+     <div id="show">
+       
+        <ul>
+            <h2>书架</h2>
+                <li> <img src="../images/childImages/jobs.jpg"><a href="#">斯蒂夫.乔布斯传<br/>[美] 沃尔特·艾萨克森</a></li>
+                <li><img src="../images/childImages/liver.jpg"><a href="#">活着<br/>余华</a></li>
+                <li><img src="../images/childImages/family.jpg"><a href="#">我们仨<br/>杨绛</a></li>
+                <li><img src="../images/childImages/goldTimer.jpg"><a href="#">我的黄金时代<br/>王小波</a></li>
+                <li><img src="../images/childImages/weicheng.jpg"><a href="#">围城<br/>钱钟书</a></li>
+            
+            
+   
+        </ul>
+     </div>
+     <div id="list">
+         
+        <ol>
+            <h4>高分榜</h4>
+            <li><a href="#"><span>1.</span>红楼梦</a></li>
+            <li><a href="#"><span>2.</span>活着</a></li>
+            <li><a href="#"><span>3.</span>1984</a></li>
+            <li><a href="#"><span>4.</span>百年孤独</a></li>
+            <li><a href="#"><span>5.</span>飘</a></li>
+            <li><a href="#"><span>6.</span>三体全集</a></li>
+            <li><a href="#"><span>7.</span>三国演义</a></li>
+              <li><a href="#"><span>8.</span>房思琪的初恋乐园</a></li>
+                <li><a href="#"><span>9.</span>动物农场</a></li>
+                  <li><a href="#"><span>10.</span>白夜行</a></li>
+        </ol>
+     </div>
+    </div>
+    <div id="comment">
+        <div class="number1">
+             <!-- 网友内容 -->
+             <div class="userContent">
+                <img src="../images/childImages/readUser1.jpg" class="userImage">
+                <a href="#" class="userName">LL</a>
+                <table>
+                    <tr>
+                        <td>
+                          <img src="../images/childImages/goldTimer.jpg"  class="contentImage">
+                        </td>
+                        <td>那一天我21岁，在我一生的黄金时代，我有好多奢望。
+                            我想爱，想吃，还想在一瞬间变成天上半明半暗的云。
+                            后来我才知道，生活就是个慢慢受槌的过程，人一天天老下去，
+                            奢望也一天天消失，最后变得像挨了槌的牛一样。可是我过21岁生
+                            日的时候没有预见到这一点。我觉得自己会永远生猛下去，什么也槌不了我
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="remark">
+                    <li><a href="#"><img src="../images/childImages/farward.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/remark.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                  </ul>
+        </div>
+    </div>
+        <div class="number2">
+            <!-- 网友内容 -->
+            <div class="userContent">
+                <img src="../images/childImages/readUser2.jpg" class="userImage">
+                <a href="#" class="userName">阿闲闲</a>
+                <table>
+                    <tr>
+                        <td>
+                          <img src="../images/childImages/liver.jpg"  class="contentImage">
+                        </td>
+                        <td>朴素的语言描述了福贵的一生，经历了中国的各个时期，内战、人民公社、
+                            文化大革命，福贵还活着，陪他经历这一切的人却纷纷逝世，老的、少的，
+                            都顷刻湮没在历史中。中文中的这两个字：活着，太贴主题，不是生活，不是苟活，就是活着。
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="remark">
+                    <li><a href="#"><img src="../images/childImages/farward.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/remark.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                  </ul>
+        </div>
+        </div>
+        <div class="number3">
+              <!-- 网友内容 -->
+              <div class="userContent">
+                <img src="../images/childImages/readUser3.jpg" class="userImage">
+                <a href="#" class="userName">冷麦子</a>
+                <table>
+                    <tr>
+                        <td>
+                          <img src="../images/childImages/baiyexing.jpg"  class="contentImage">
+                        </td>
+                        <td>我觉得亮对于雪穗更多的是愧疚，是哪怕穷尽一生都无法偿还的罪恶感。
+                            所以他牺牲了自己去全力守护她。但是雪穗自那时起已经不是一个完整的人了，
+                            甚至说当她不再是自己的时候她已经疯了。在这无望的守护和绝望的爱情里面最
+                            可怜的却是那些曾经无私爱着他们的无辜之人！
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="remark">
+                    <li><a href="#"><img src="../images/childImages/farward.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/remark.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                    <li><a href="#"><img src="../images/childImages/parise.png"></a></li>
+                  </ul>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

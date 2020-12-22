@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+</head>
+<link rel="stylesheet" href="../css/musicConment.css">
+    <link href="../css/navbar.css" rel="stylesheet">
+<style type="text/css">
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:#333333;
+}
+/* 歌单 */
+#songList{
+    width:400px;
+    height:400px;
+    border:solid black 1px;
+    border-radius: 10px;
+    margin: 10px;
+    
+    background: hsla(0,0%,100%,.3);
+}
+#songList img{
+    width: 150px;
+    display:inline-block;
+    margin: 10px;
+    position: relative;
+    left:30px;
+    
+    
+}
+#songList li{
+    float: left;
+    list-style: none;
+}
+#songList a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: aliceblue; 
+        position: relative;
+        left:25px;
+        top:-10px;
+    }
+    #songList a:hover, a:visited{
+        color:#333333;
+    }
+#songList{
+    text-align: center;
+}
+
+ /* 唱片 */
+    #record{
+         width:280px;
+         height:280px;
+         background-image:repeating-radial-gradient(black,black 5px, #1c1c1c 7px);
+         border-radius:50%;
+         float:right;
+         position: relative;
+         left:-40%;
+         top:-400px;
+         
+    }
+     #recoder-show{
+        border-radius: 50%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left:-60px;
+        margin-top:-60px;
+        transform:rotate(160deg);
+        -ms-transform:rotate(160deg);
+        -webkit-transform:rotate(160deg);
+    }
+#playerbtn{
+    width:300px;
+    height: 100px;
+    
+}
+ 
+ #playerbtn img{  
+    width: 50px;
+     /* padding: 40px; */
+     display:block;
+     margin:10px;
+     position: relative;
+     top:310px;
+     left:40px;
+     float: left;
+    
+ }
+ #playerbtn a:hover{
+     background-color: #333333;
+ }
+ /* 歌词 */
+ .songword_box{
+     height:400px;
+     width:400px;
+     position: relative;
+     top:-400px;
+     border-radius: 10px;
+     left:70%;
+     background: hsla(0,0%,100%,.3);
+     overflow: auto;
+ }
+ .songword{
+     padding: 10px;
+     line-height: 200%;
+ }
+ ::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 5px solid transparent;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
+}
+ 
+::-webkit-scrollbar-thumb {
+  min-height: 20px;
+  background-clip: content-box;
+  box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;
+}
+ 
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* 网友评论 */
+.comment{
+    position: relative;
+    top:-350px;
+    padding: 0;
+    margin: 5%;
+    
+    
+}
+.box{
+        width:200px;
+        height:auto;
+        margin:20px;
+        background: hsla(0,0%,100%,.3);
+        padding: 10px;
+        border-radius: 10px;
+        border:solid gray 1px;
+       display: inline-block;
+    }
+   
+</style>
+<body>
+<div id="wrapper">
+<div class="navbar">
+      <ul id="nav">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="movie.html">电影</a></li>
+        <li><a href="music.html">音乐</a></li>
+        <li><a href="read.html">文学</a></li>
+      </ul>
+     <div id="search">
+      <input id="search1" type="text" placeholder="">
+      <button id="btn1" type="submit"><img src="../images/rearch.png" height="36px""></button>
+     </div>
+      <ul id="signbtn">
+        <li><a href="login.html">登录</a></li>
+        <li><a href="logon.html">注册</a></li>
+        
+      </ul>
+     </div>
+    <div id="songList">
+       <h2>
+           歌单
+       </h3>
+       <ul>
+           <li> <img src="../images/musicImages/1.png"><a href="javascript:;" id="song1">好久不见</a></li>
+           <li><img src="../images/musicImages/2.png"><a href="javascript:;" id="song2">爱你就像爱生命</a></li>
+           <li><img src="../images/musicImages/3.png"><a href="javascript:;" id="song3">外面的世界</a></li>
+           <li><img src="../images/musicImages/4.png"><a href="javascript:;" id="song4">wonderful tonight</a></li>
+       </ul>
+     </div> 
+     <div id="record">
+         <img id="recoder-show" src="../images/childImages/cover.jpg" width="120px">
+         <div id="playerbtn">
+           <a href=#"> <img id="prevbtn" src="../images/childImages/lastSong.png"></a>
+            <a href="javascript:" id="pausebtn" ><img  src="../images/childImages/pause2.png"></a>
+            <a href="#"><img id="nextbtn" src="../images/childImages/nextSong.png"></a>
+            <audio id="music" src="../audio/lyall.mp3" >
+                
+            </audio>
+         </div>
+        
+     </div> 
+     <div class="songword_box">
+  <div class="songword">
+      <p>歌名：《好久不见》<br/>
+        演唱：陈奕迅<br/>
+        作词：施立<br/>
+        作曲：陈小霞 <br/>        
+        歌词：   <br/>     
+        我来到，你的城市  <br/>      
+        走过你来时的路   <br/>     
+        想像着，没我的日子  <br/>      
+        你是怎样的孤独      <br/> 
+        拿着你，给的照片    <br/>    
+        熟悉的那一条街     <br/>  
+        只是没了你的画面    <br/>   
+        我们回不到那天     <br/>
+        你会不会忽然的出现  <br/>    
+        在街角的咖啡店    <br/>
+        我会带着笑脸，挥手寒暄<br/>
+        我来到，你的城市  <br/>      
+        走过你来时的路   <br/>     
+        想像着，没我的日子  <br/>      
+        你是怎样的孤独      <br/> 
+        拿着你，给的照片    <br/>    
+        熟悉的那一条街     <br/>  
+        只是没了你的画面    <br/>   
+        我们回不到那天     <br/>
+        你会不会忽然的出现  <br/>    
+        在街角的咖啡店    <br/>
+        我会带着笑脸，挥手寒暄</p>
+  </div>
+     </div> 
+<div class="comment">
+    <div class="box">我真不知怎么才能和你亲近起来，你好像是一个可望而不可及的目标，
+        我琢磨不透，追也追不上，就坐下哭了起来。 你要是喜欢别人我会哭，
+        但是还是喜欢你。——王小波《爱你就像爱生命》</div>
+    <div class="box">“你好哇，李银河”“但愿我和你，是一支唱不完的歌。”“一想到你，我这张丑脸上就泛起微笑。”</div>
+    <div class="box">“你要是喜欢了别人我会哭，</br>
+        但是还是喜欢你。”</br>
+        ——王小波《爱你就像爱生命》</div>
+    <div class="box">我一生的黄金时代，细看过无数特立独行的猪，直到它们变成了沉默的大多数。</div>
+    <div class="box">大学，我没有去远方，停留在土生土长的城市，依然依偎在父母的港湾，外面的世界是否精彩，
+        我不知道，我只是坐在图书馆空荡荡的位子上，听着歌淡淡遐想，然后收拾好东西，默默离开，
+        我没有故事，没有惊天动地的生活，只有那年雨天那年夏天的简简单单</div>
+    <div class="box">你会不会忽然的出现。我在脑海里面重复一遍一遍跟你再次见面的场景，
+        想抱着你说我真的好想好想你，真的对不起是我把你弄丢了，要跟你说很多的话。
+        真的见面，可能也只有好久不见。我们回不到那一天。</div>
+    <div class="box">
+    这首歌跟《先走的人极其嚣张》好像，我很喜欢。 “用一场死亡 治好昨日的伤 指着心脏开了一枪”<br/>
+“假设会死亡 枪法能否获奖 活着的人不痛不痒”<br/>
+“生命太漫长屡遭暗算 岁月指证 时光说谎”<br/>
+“就像她走时嚣张 说来日方长 却落得如此下场”<br/>
+    </div>
+    <div class="box">这首歌跟《先走的人极其嚣张》好像，我很喜欢。 “用一场死亡 治好昨日的伤 指着心脏开了一枪” “假设会死亡 枪法能否获奖 活着的人不痛不痒” “生命太漫长屡遭暗算 岁月指证 时光说谎” “就像她走时嚣张 说来日方长 却落得如此下场” ...</div>
+    <div class="box">I thought that it mattered what I said or where I said it.Then I realized the only thing that matters is that you,you make me happier than I ever thought I could be.And if you'll let me,I will spend the rest of my life trying to make you feel the same way.Monica,will you marry me</div>
+    <div class="box">老友记全十季反反复复看了不下十遍，每次心情不好随便点开一集都能笑得捧腹，不看老友记的人不懂我，喜欢老友记的人才会感同身受   </div>
+    <div class="box">没有女孩子会不喜欢钱德勒</div>
+    <div class="box">我想变成莫妮卡！我想要瑞秋菲比那样的闺蜜！想要罗斯那样的哥哥！想要乔伊那样的邻居！想要钱德勒那样的爱人！！ 老友记是我一生的感动！经典不老！</div>
+</div>
+</div>
+</body>
+<script src="../js/musicJS.js">
+</script>
+</div>
+</html>
